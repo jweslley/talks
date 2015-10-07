@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jonhnny Weslley @jweslley" />
+  <meta name="dcterms.date" content="2015-07-10" />
+  <title>Dropwizard</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="../reveal.js/lib/css/solarized_dark.css"/>
+    <link rel="stylesheet" href="../reveal.js/css/theme/sky.css"/>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Dropwizard</h1>
+    <h2 class="author">Jonhnny Weslley <span class="citation" data-cites="jweslley">@jweslley</span></h2>
+    <h3 class="date">07/10/2015</h3>
+</section>
+
+<section><section id="dropwizard" class="titleslide slide level1"><h1>Dropwizard</h1></section><section id="o-que-é-dropwizard" class="slide level2">
+<h1>O que é Dropwizard?</h1>
+<figure>
+<img src="images/dropwizard-hat.png" alt="Dropwizard" /><figcaption>Dropwizard</figcaption>
+</figure>
+</section><section id="section" class="slide level2">
+<h1></h1>
+<figure>
+<img src="images/dropwizard-comic.gif" alt="Dropwizard" /><figcaption>Dropwizard</figcaption>
+</figure>
+</section><section id="o-que-é-dropwizard-1" class="slide level2">
+<h1>O que é Dropwizard?</h1>
+<ul>
+<li>Coleção de bibliotecas</li>
+<li><strong>Glue code</strong></li>
+<li>Objetivo:</li>
+<li>Criar aplicações(microservices) facilmente</li>
+</ul>
+</section><section id="objetivos" class="slide level2">
+<h1>Objetivos</h1>
+<ul>
+<li>Agilidade na criação de novos serviços</li>
+<li>Simplicidade</li>
+<li>Facilidade de deploy</li>
+<li>Monitoramento</li>
+</ul>
+</section><section id="optionated" class="slide level2">
+<h1>Optionated*</h1>
+<ul>
+<li><a href="http://www.eclipse.org/jetty/">Jetty</a> para HTTP</li>
+<li><a href="https://jersey.java.net/">Jersey</a> para REST (JAX-RS)</li>
+<li><a href="http://wiki.fasterxml.com/JacksonHome/">Jackson</a> para JSON</li>
+<li><a href="https://github.com/dropwizard/metrics">Metrics</a> para instrumentação</li>
+<li><a href="http://logback.qos.ch/">Logback</a> para logging</li>
+<li><a href="https://github.com/google/guava">Guava</a></li>
+<li><a href="http://hibernate.org/validator/">Hibernate validator</a> (JSR-303)</li>
+<li><strong>Apache HTTP Client</strong></li>
+</ul>
+</section><section id="modulos" class="slide level2">
+<h1>Modulos</h1>
+<ul>
+<li>dropwizard-core</li>
+<li>dropwizard-auth</li>
+<li>dropwizard-testing</li>
+<li>dropwizard-hibernate</li>
+<li>dropwizard-client</li>
+<li>...</li>
+</ul>
+</section><section id="recursos-extras" class="slide level2">
+<h1>Recursos extras</h1>
+<ul>
+<li>Bundles</li>
+<li>Tasks</li>
+<li>Commands</li>
+<li>Testing</li>
+<li>Admin server</li>
+<li>Managed Objects</li>
+</ul>
+</section><section id="aplicação-minima" class="slide level2">
+<h1>Aplicação minima</h1>
+<ul>
+<li>Maven</li>
+<li>Application class</li>
+<li>Configuration class</li>
+<li>Representation class (Opcional)</li>
+<li>Resource class (Opcional)</li>
+<li>Healthcheck</li>
+<li>Metricas customizadas</li>
+</ul>
+</section><section id="demo" class="slide level2">
+<h1>Demo</h1>
+<figure>
+<img src="images/demo.gif" alt="" />
+</figure>
+</section><section id="links" class="slide level2">
+<h1>Links</h1>
+<ul>
+<li><a href="http://www.dropwizard.io/">Dropwizard website</a></li>
+<li><a href="">http://gunshowcomic.com/316</a></li>
+<li><a href="http://martinfowler.com/articles/microservices.html">Microservices</a></li>
+<li><a href="">http://thecodinglove.com/post/97654938934/demo</a></li>
+</ul>
+</section><section id="obrigado" class="slide level2">
+<h1>Obrigado!</h1>
+<ul>
+<li>Jonhnny Weslley</li>
+<li><span class="citation" data-cites="jweslley">@jweslley</span></li>
+<li><a href="">http://jweslley.github.io/talks/dropwizard-facema</a></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+//          { src: '../reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '../reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+    </body>
+</html>
