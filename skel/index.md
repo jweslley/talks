@@ -1,6 +1,9 @@
-% Title
-% Jonhnny Weslley
-% 20/09/2014
+---
+title: Title
+subtitle: Subtitle
+author: Jonhnny Weslley
+date: 20/09/2014
+---
 
 # In the morning
 

@@ -1,0 +1,4 @@
+all:
+	pandoc -t beamer --latex-engine xelatex \
+		--template ../templates/beamer-metropolis.tex \
+		-s index.md -o index.pdf
