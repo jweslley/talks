@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Error tracking com Sentry</title>
+    <meta name="description" content="Error tracking com Sentry">
+    <meta name="dcterms.date" content="2017-04-29" />
+
+    <meta name="author" content="Jonhnny Weslley">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides.md"
+                 data-separator="^\n\n\n"
+                 data-vertical="^\n---\n$"
+                 data-separator-notes="^Notes:">
+        </section>
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script src="reveal.js/js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,       // Display controls in the bottom right corner
+        progress: true,       // Display a presentation progress bar
+        history:  true,       // Push each slide change to the browser history
+        center: true,         // Vertical centering of slides
+        slideNumber: false,   // Display the page number of the current slide
+        keyboard: true,       // Enable keyboard shortcuts for navigation
+        overview: true,       // Enable the slide overview mode
+        touch: true,          // Enables touch navigation on devices with touch input
+        loop: false,          // Loop the presentation
+        rtl: false,           // Change the presentation direction to be RTL
+        shuffle: false,       // Randomizes the order of slides each time the presentation loads
+        fragments: true,      // Turns fragments on and off globally
+        help: true,           // Flags if we should show a help overlay when the questionmark key is pressed
+        showNotes: false,     // Flags if speaker notes should be visible to all viewers
+        mouseWheel: false,    // Enable slide navigation via mouse wheel
+        hideAddressBar: true, // Hides the address bar on mobile devices
+        previewLinks: false,  // Opens links in an iframe preview overlay
+
+        defaultTiming: 120,   // Set default timing of 2 minutes per slide
+        viewDistance: 3,      // Number of slides away from the current that are visible
+        display: 'block',     // The display mode that will be used to show slides
+        transition: 'slide',  // Transition style: none/fade/slide/convex/concave/zoom
+        transitionSpeed: 'default',   // Transition speed: default/fast/slow
+        backgroundTransition: 'fade', // Transition style for full page slide backgrounds: none/fade/slide/convex/concave/zoom
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
+
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+          // Interpret Markdown in <section> elements
+          { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+          // Syntax highlight for <code> elements
+          { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+          // Zoom in and out with Alt+click
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+
+          // Speaker notes
+          { src: 'reveal.js/plugin/notes/notes.js', async: true },
+
+          // MathJax
+          { src: 'reveal.js/plugin/math/math.js', async: true }
+        ]
+      });
+    </script>
+
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-9232216-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
